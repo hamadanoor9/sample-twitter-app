@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   
 
   resources :users
+  
+  get "/follow/:id" => "users#follow", as: :follow
+  get "/unfollow/:id" => "users#unfollow", as: :unfollow
 end
