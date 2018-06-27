@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get "/unfollow/:id" => "users#unfollow", as: :unfollow
   
   post "/messages" => "messages#create", as: :messages
+  delete "/message/:id" => "messages#destroy"
 end
